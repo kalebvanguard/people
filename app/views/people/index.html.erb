@@ -1,0 +1,21 @@
+
+<button><%= link_to "New Person", new_person_path %></button>
+</>
+<ul>
+<br />
+<% @people.each do |p| %>
+  <li><%= link_to p.full_name, person_path(p.id)%></li>
+<% end %>
+</ul>
+
+    
+
+<%# form_for @page do |f| is a rails helper that creates a form.
+
+f.label creates a label
+
+f.text_field creates an input type text
+
+f.text_area creates a text area input
+
+f.submit creates a submit button %>

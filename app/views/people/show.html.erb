@@ -1,0 +1,22 @@
+<%# <h1>People#show</h1> %>
+<%= link_to 'Back', person_path %>
+
+
+
+
+<%= link_to "Edit", edit_person_path(@note.id) %>
+<%= link_to "Delete", person_path(@note.id), method: :delete %>
+<%= link_to "Back", person_path %>
+
+<p>Find me in app/views/people/show.html.erb</p>
+
+
+
+
+ <%# t.string :first_name
+      t.string :last_name
+      t.integer :age
+      t.string :hair_color
+      t.string :eye_color
+      t.string :gender
+      t.boolean :alive %>

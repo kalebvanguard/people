@@ -1,0 +1,28 @@
+<h1>People-- New--</h1>
+
+
+<p><%= link_to 'New', new_person_path %></p>
+<% @person.each do |page| %>
+  ...
+  <%= link_to 'Show Person', person_path(person) %>
+  <%= link_to 'Edit Page', edit_person_path(person) %>
+  <%= link_to 'Destroy Page', page, method: :delete %>
+<% end %>
+
+<h1>New Page</h1>
+<%= form_for @person do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+
+  <%= f.label :body %>
+  <%= f.text_area :body %>
+
+  <%= f.submit %>
+<% end %>
+
+
+
+<p>Find me in app/views/people/new.html.erb</p>

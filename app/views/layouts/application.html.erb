@@ -2,6 +2,8 @@
 <html>
   <head>
     <title>People</title>
+<hr/>
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +11,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
-    <%= yield %>
-  </body>
+ <body>
+  <%= render 'layouts/navbar' %>
+  <%= yield %>
+</body>
 </html>
